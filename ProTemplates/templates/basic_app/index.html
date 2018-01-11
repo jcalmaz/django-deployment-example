@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+  {% block body_block %}
+    <h1>Welcome to our New New Home Page</h1>
+    <h2>This is index.html page showing!</h2>
+    <h3>{{ text|cutworld:'world'}}</h3>
+    <h3>{{ number|add:99|floatformat:2}}</h3>
+
+  {% endblock %}
